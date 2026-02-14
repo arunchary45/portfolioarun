@@ -1,6 +1,6 @@
-# 🚀 Personal Portfolio - Arun Chaudhary
+# 🚀 Personal Portfolio – Arun Chaudhary
 
-**Standard of Excellence | Full-Stack Web Developer | AI/ML Enthusiast**
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=vercel&logoColor=white)](https://portfolioarun-dusky.vercel.app)
 
 [![Portfolio Banner](assets/banner.png)](https://portfolioarun-dusky.vercel.app)
 
