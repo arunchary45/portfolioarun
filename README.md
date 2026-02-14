@@ -2,9 +2,8 @@
 
 **Standard of Excellence | Full-Stack Web Developer | AI/ML Enthusiast**
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=vercel&logoColor=white)](portfolioarun-dusky.vercel.app)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=vercel&logoColor=white)](https://portfolioarun-dusky.vercel.app)
 
-![Portfolio Banner](assets/banner.png)
 
 ## 📖 Overview
 Welcome to my personal portfolio repository! This responsive, high-performance website showcases my journey as a **Computer Science Engineer**, highlighting my expertise in **Full-Stack Development**, **Artificial Intelligence**, and **Machine Learning**.
