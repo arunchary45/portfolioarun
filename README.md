@@ -2,7 +2,7 @@
 
 **Standard of Excellence | Full-Stack Web Developer | AI/ML Enthusiast**
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=vercel&logoColor=white)](https://arunportfolio-two.vercel.app/)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=vercel&logoColor=white)](portfolioarun-dusky.vercel.app)
 
 ![Portfolio Banner](assets/banner.png)
 
