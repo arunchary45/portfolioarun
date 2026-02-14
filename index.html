@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arun Chaudhary | Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Arun Chaudhary, a Full-stack Web Developer and aspiring AI/ML Engineer.">
+    <meta name="keywords"
+        content="Arun Chaudhary, Portfolio, Full Stack Developer, Java, MERN Stack, AI/ML, Computer Science">
+    <meta name="author" content="Arun Chaudhary">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- Google Fonts (Premium Typography) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&family=Geist+Mono:wght@100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Arun Chaudhary</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center gap-3">
+                    <li class="nav-item"><a class="nav-link text-reset" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-reset" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link text-reset" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link text-reset" href="#certifications">Certifications</a></li>
+                    <li class="nav-item"><a class="nav-link text-reset" href="#achievements">Achievements</a></li>
+                    <li class="nav-item"><a class="nav-link text-reset" href="#contact">Contact</a></li>
+                    <li class="nav-item">
+                        <button id="theme-btn" class="btn btn-outline-light rounded-circle shadow-none">
+                            <i class="fas fa-sun"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section position-relative overflow-hidden" id="home">
+        <div class="container">
+            <div class="row align-items-center flex-column-reverse flex-lg-row">
+                <div class="col-lg-7 text-center text-lg-start" data-aos="fade-right">
+                    <h5 class="text-primary fw-bold mb-3 font-mono">Hi there, I am</h5>
+                    <h1 class="display-3 fw-bold mb-2">Arun Chaudhary</h1>
+                    <h3 class="mb-4 text-secondary font-mono typing-effect">I'm a <span id="role-text"></span></h3>
+                    <p class="lead mb-4 text-muted">
+                        Passionate about building scalable web applications and exploring the depths of AI/ML.
+                        Crafting digital experiences with code and creativity.
+                    </p>
+                    <div class="d-flex gap-3 justify-content-center justify-content-lg-start">
+                        <a href="#projects" class="btn btn-primary px-4 py-2 rounded-pill font-mono">View Work</a>
+                        <a href="assets/resume.pdf" download
+                            class="btn btn-outline-light px-4 py-2 rounded-pill font-mono"><i
+                                class="fas fa-download me-2"></i>Download Resume</a>
+                    </div>
+                    <div class="mt-5 d-flex gap-3 justify-content-center justify-content-lg-start fs-4">
+                        <a href="https://github.com/arunchary45" target="_blank" class="text-reset hover-float"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/arunchry45/" target="_blank"
+                            class="text-reset hover-float"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/arunchary45/" target="_blank"
+                            class="text-reset hover-float"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:arunchaudhary9054@gmail.com" class="text-reset hover-float"><i
+                                class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center mb-5 mb-lg-0" data-aos="fade-left">
+                    <img src="assets/image.jpeg" alt="Arun Chaudhary" class="hero-img img-fluid"
+                        onerror="this.src='https://via.placeholder.com/300'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-5" id="about">
+        <div class="container py-5">
+            <h2 class="text-center display-5 fw-bold mb-5" data-aos="fade-up"><span class="text-gradient">About
+                    Me</span></h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+                    <div class="custom-card p-4 h-100 position-relative overflow-hidden">
+                        <h3 class="h4 mb-4 font-mono text-primary">My Journey</h3>
+                        <p class="journey-text mb-3">
+                            I am a Computer Science Engineering student at <strong class="text-white">Lovely
+                                Professional
+                                University</strong> (2023-2027).
+                            My passion lies in solving complex problems through elegant code.
+                        </p>
+                        <p class="journey-text mb-3">
+                            Currently focused on <span
+                                class="badge bg-primary bg-opacity-10 text-primary border border-primary border-opacity-25">Full
+                                Stack Development</span> using the
+                            MERN stack, while also
+                            building a strong foundation in <span
+                                class="badge bg-secondary bg-opacity-10 text-secondary border border-secondary border-opacity-25">Data
+                                Structures &
+                                Algorithms</span> with Java.
+                        </p>
+                        <p class="journey-text mb-3">
+                            Beyond web development, I am a passionate <span
+                                class="badge bg-warning bg-opacity-10 text-warning border border-warning border-opacity-25">AI/ML
+                                Enthusiast</span>, currently exploring neural networks and intelligent systems to build
+                            smarter applications.
+                        </p>
+                        <p class="journey-text mb-0">
+                            I believe in continuous learning effectively using technology to bridge the gap between
+                            ideas and reality.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <!-- Education Timeline -->
+                    <div class="custom-card p-4 h-100">
+                        <h3 class="h4 mb-4 font-mono text-primary d-flex align-items-center gap-2">
+                            <i class="fas fa-graduation-cap"></i> Education
+                        </h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-icon bg-primary text-white">
+                                    <i class="fas fa-user-graduate"></i>
+                                </div>
+                                <h5 class="fw-bold text-light">Bachelor of Technology – CSE</h5>
+                                <p class="text-primary mb-1 font-mono small">Aug’23 - Present</p>
+                                <p class="text-muted mb-0">Lovely Professional University, Punjab</p>
+                                <p class="small text-muted mt-1"><i class="fas fa-star text-warning me-1"></i>CGPA: 6.11
+                                </p>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-icon bg-secondary text-dark">
+                                    <i class="fas fa-school"></i>
+                                </div>
+                                <h5 class="fw-bold text-light">Intermediate (Class XII)</h5>
+                                <p class="text-primary mb-1 font-mono small">Apr’21 – Mar’22</p>
+                                <p class="text-muted mb-0">Kalpanath Singh Kanya Inter College</p>
+                                <p class="small text-muted mt-1">Percentage: 71.68%</p>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-icon bg-info text-dark">
+                                    <i class="fas fa-book-open"></i>
+                                </div>
+                                <h5 class="fw-bold text-light">Matriculation (Class X)</h5>
+                                <p class="text-primary mb-1 font-mono small">Apr’19 – Mar’20</p>
+                                <p class="text-muted mb-0">Swami Vivekanand Inter College</p>
+                                <p class="small text-muted mt-1">Percentage: 74.66%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-5 bg-opacity-50" id="skills">
+        <div class="container py-5">
+            <h2 class="text-center display-5 fw-bold mb-5" data-aos="fade-up"><span class="text-gradient">Technical
+                    Skills</span></h2>
+            <div class="row">
+                <!-- Languages -->
+                <div class="col-12 mb-4" data-aos="fade-up">
+                    <div class="custom-card p-4">
+                        <h3 class="h4 skill-category-title">Languages</h3>
+                        <div class="skill-grid mb-0">
+                            <div class="skill-chip"><i class="devicon-java-plain colored"></i> <span>Java</span></div>
+                            <div class="skill-chip"><i class="devicon-c-plain colored"></i> <span>C</span></div>
+                            <div class="skill-chip"><i class="devicon-cplusplus-plain colored"></i> <span>C++</span>
+                            </div>
+                            <div class="skill-chip"><i class="devicon-python-plain colored"></i> <span>Python</span>
+                            </div>
+                            <div class="skill-chip"><i class="devicon-javascript-plain colored"></i>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frontend -->
+                <div class="col-12 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="custom-card p-4">
+                        <h3 class="h4 skill-category-title">Frontend Development</h3>
+                        <div class="skill-grid mb-0">
+                            <div class="skill-chip"><i class="devicon-html5-plain colored"></i> <span>HTML5</span></div>
+                            <div class="skill-chip"><i class="devicon-css3-plain colored"></i> <span>CSS3</span></div>
+                            <div class="skill-chip"><i class="devicon-react-original colored"></i> <span>React.js</span>
+                            </div>
+                            <div class="skill-chip"><i class="devicon-bootstrap-plain colored"></i>
+                                <span>Bootstrap</span>
+                            </div>
+                            <div class="skill-chip"><i class="devicon-tailwindcss-original colored"></i>
+                                <span>Tailwind</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="col-12 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="custom-card p-4">
+                        <h3 class="h4 skill-category-title">Backend Development</h3>
+                        <div class="skill-grid mb-0">
+                            <div class="skill-chip"><i class="devicon-nodejs-plain-wordmark colored"></i>
+                                <span>Node.js</span>
+                            </div>
+                            <div class="skill-chip"><i class="devicon-express-original text-white"></i>
+                                <span>Express.js</span>
+                            </div>
+                            <div class="skill-chip"><i class="devicon-mongodb-plain colored"></i> <span>MongoDB</span>
+                            </div>
+                            <div class="skill-chip"><i class="devicon-mysql-original colored"></i> <span>MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="col-12 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="custom-card p-4">
+                        <h3 class="h4 skill-category-title">Tools & DevOps</h3>
+                        <div class="skill-grid mb-0">
+                            <div class="skill-chip"><i class="devicon-git-plain colored"></i> <span>Git</span></div>
+                            <div class="skill-chip"><i class="devicon-github-original text-white"></i>
+                                <span>GitHub</span>
+                            </div>
+                            <div class="skill-chip"><i class="devicon-vscode-plain colored"></i> <span>VS Code</span>
+                            </div>
+                            <div class="skill-chip"><i class="devicon-postman-plain colored"></i> <span>Postman</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI / Machine Learning -->
+                <div class="col-12" data-aos="fade-up" data-aos-delay="400">
+                    <div class="custom-card p-4">
+                        <h3 class="h4 skill-category-title">Machine Learning & AI</h3>
+                        <div class="skill-grid mb-0">
+                            <div class="skill-chip"><i class="devicon-python-plain colored"></i> <span>Python
+                                    (Data)</span>
+                            </div>
+                            <div class="skill-chip"><i class="devicon-tensorflow-original colored"></i>
+                                <span>TensorFlow</span>
+                            </div>
+                            <div class="skill-chip"><i class="devicon-pytorch-original colored"></i>
+                                <span>PyTorch</span>
+                            </div>
+                            <div class="skill-chip"><i class="devicon-scikitlearn-plain colored"></i>
+                                <span>Scikit-Learn</span>
+                            </div>
+                            <div class="skill-chip"><i class="devicon-pandas-original text-white"></i>
+                                <span>Pandas</span>
+                            </div>
+                            <div class="skill-chip"><i class="devicon-numpy-original colored"></i> <span>NumPy</span>
+                            </div>
+                            <div class="skill-chip"><i class="devicon-matplotlib-plain colored"></i>
+                                <span>Matplotlib</span>
+                            </div>
+                            <div class="skill-chip"><i class="fas fa-brain text-danger"></i> <span>Random Forest</span>
+                            </div>
+                            <div class="skill-chip"><i class="fas fa-chart-line text-info"></i> <span>Model Eval</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Soft Skills -->
+            <div class="col-12 mt-5" data-aos="fade-up" data-aos-delay="500">
+                <h2 class="text-center display-5 fw-bold mb-5"><span class="text-gradient">Soft Skills</span></h2>
+                <div class="custom-card p-5 text-center">
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <div class="skill-chip"><i class="fas fa-brain text-warning"></i> <span>Critical Thinking</span>
+                        </div>
+                        <div class="skill-chip"><i class="fas fa-users text-success"></i> <span>Team Player</span></div>
+                        <div class="skill-chip"><i class="fas fa-tasks text-info"></i> <span>Project Management</span>
+                        </div>
+                        <div class="skill-chip"><i class="fas fa-sync-alt text-primary"></i> <span>Adaptability</span>
+                        </div>
+                        <div class="skill-chip"><i class="fas fa-comments text-secondary"></i>
+                            <span>Communication</span>
+                        </div>
+                        <div class="skill-chip"><i class="fas fa-lightbulb text-warning"></i>
+                            <span>Problem Solving</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="py-5" id="projects">
+        <div class="container py-5">
+            <h2 class="text-center display-5 fw-bold mb-5" data-aos="fade-up"><span class="text-gradient">Featured
+                    Projects</span></h2>
+            <div class="row g-4">
+                <!-- Project 1 -->
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="custom-card h-100 d-flex flex-column box-primary">
+                        <div class="p-4 flex-grow-1">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <div>
+                                    <h3 class="h5 fw-bold font-mono mb-1">Real-Time Construction Site Monitoring</h3>
+                                    <span
+                                        class="badge bg-primary bg-opacity-10 text-primary border border-primary border-opacity-25">Jan
+                                        '25 – Mar '25</span>
+                                </div>
+                                <i class="fas fa-hard-hat text-primary fa-lg"></i>
+                            </div>
+                            <p class="text-muted small mb-3">AI-based safety compliance & monitoring system.</p>
+                            <ul class="list-unstyled small text-muted mb-4">
+                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i><strong>95%
+                                        Detection Accuracy:</strong> Random Forest model for safety violations (helmets,
+                                    vests) using pandas & scikit-learn.</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i><strong>75%+
+                                        Manual Work:</strong> Automated ML-driven insights & alerts reduced manual
+                                    monitoring load.</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i><strong>Live
+                                        Dashboard:</strong> Built with <strong>Python & Streamlit</strong> for real-time
+                                    visualization.</li>
+                            </ul>
+                            <div class="mb-3">
+                                <span class="badge bg-secondary opacity-75 me-1 mb-1">Python</span>
+                                <span class="badge bg-secondary opacity-75 me-1 mb-1">Machine Learning</span>
+                                <span class="badge bg-secondary opacity-75 me-1 mb-1">Random Forest</span>
+                                <span class="badge bg-secondary opacity-75 me-1 mb-1">Streamlit</span>
+                                <span class="badge bg-secondary opacity-75 me-1 mb-1">REST API</span>
+                                <span class="badge bg-secondary opacity-75 mb-1">MySQL</span>
+                            </div>
+                        </div>
+                        <div class="p-4 pt-0 mt-auto d-flex gap-2">
+                            <a href="https://github.com/arunchary45/Protrack" target="_blank"
+                                class="btn btn-sm btn-outline-primary flex-grow-1"><i class="fab fa-github me-1"></i>
+                                View Code</a>
+                            <a href="https://protrack-byuq283egnbhvc3xp7tmeg.streamlit.app/" target="_blank"
+                                class="btn btn-sm btn-primary flex-grow-1"><i class="fas fa-external-link-alt me-1"></i>
+                                Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="custom-card h-100 d-flex flex-column box-secondary">
+                        <div class="p-4 flex-grow-1">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <div>
+                                    <h3 class="h5 fw-bold font-mono mb-1">AI Chatbot - Workout Planner</h3>
+                                    <span
+                                        class="badge bg-secondary bg-opacity-10 text-secondary border border-secondary border-opacity-25">Jun
+                                        '25 – Aug '25</span>
+                                </div>
+                                <i class="fas fa-dumbbell text-secondary fa-lg"></i>
+                            </div>
+                            <p class="text-muted small mb-3">AI-powered personalized fitness assistant.</p>
+                            <ul class="list-unstyled small text-muted mb-4">
+                                <li class="mb-2"><i class="fas fa-check-circle text-secondary me-2"></i><strong>Gemini
+                                        API Integration:</strong> Real-time, context-aware exercise guidance & logic.
+                                </li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-secondary me-2"></i><strong>95%
+                                        Response Accuracy:</strong> Analyzes fitness goals for custom recommendations.
+                                </li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-secondary me-2"></i><strong>Dynamic
+                                        Planning:</strong> 100% personalized fitness plans generated via AI.</li>
+                            </ul>
+                            <div class="mb-3">
+                                <span class="badge bg-secondary opacity-75 me-1 mb-1">React + Vite</span>
+                                <span class="badge bg-secondary opacity-75 me-1 mb-1">Google Gemini API</span>
+                                <span class="badge bg-secondary opacity-75 me-1 mb-1">JavaScript</span>
+                                <span class="badge bg-secondary opacity-75 mb-1">CSS3</span>
+                            </div>
+                        </div>
+                        <div class="p-4 pt-0 mt-auto d-flex gap-2">
+                            <a href="https://github.com/arunchary45/FitAI-Pro" target="_blank"
+                                class="btn btn-sm btn-outline-secondary flex-grow-1"><i class="fab fa-github me-1"></i>
+                                View Code</a>
+                            <a href="https://fit-ai-pro-gamma.vercel.app/" target="_blank"
+                                class="btn btn-sm btn-secondary flex-grow-1"><i
+                                    class="fas fa-external-link-alt me-1"></i>
+                                Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="custom-card h-100 d-flex flex-column box-info">
+                        <div class="p-4 flex-grow-1">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <div>
+                                    <h3 class="h5 fw-bold font-mono mb-1">Personal Portfolio Website</h3>
+                                    <span
+                                        class="badge bg-info bg-opacity-10 text-info border border-info border-opacity-25">Feb
+                                        '26</span>
+                                </div>
+                                <i class="fas fa-globe text-info fa-lg"></i>
+                            </div>
+                            <p class="text-muted small mb-3">Modern, dark-themed digital resume & showcase.</p>
+                            <ul class="list-unstyled small text-muted mb-4">
+                                <li class="mb-2"><i class="fas fa-check-circle text-info me-2"></i><strong>Premium
+                                        UI/UX:</strong> Glassmorphism cards, mesh gradients, and smooth scroll
+                                    animations.</li>
+                                <li class="mb-2"><i
+                                        class="fas fa-check-circle text-info me-2"></i><strong>Interactive:</strong>
+                                    Powered by <strong>AOS.js</strong> & <strong>Typed.js</strong> for engaging user
+                                    experience.</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-info me-2"></i><strong>Contact
+                                        Form:</strong> Fully functional integration with <strong>Formspree</strong>.
+                                </li>
+                            </ul>
+                            <div class="mb-3">
+                                <span class="badge bg-secondary opacity-75 me-1 mb-1">Bootstrap 5</span>
+                                <span class="badge bg-secondary opacity-75 me-1 mb-1">HTML5/CSS3</span>
+                                <span class="badge bg-secondary opacity-75 me-1 mb-1">JavaScript</span>
+                                <span class="badge bg-secondary opacity-75 me-1 mb-1">AOS.js</span>
+                            </div>
+                        </div>
+                        <div class="p-4 pt-0 mt-auto d-flex gap-2">
+                            <a href="https://github.com/arunchary45/Portfolio" target="_blank"
+                                class="btn btn-sm btn-outline-info flex-grow-1"><i class="fab fa-github me-1"></i>
+                                View Code</a>
+                            <a href="https://arunportfolio-two.vercel.app/" target="_blank"
+                                class="btn btn-sm btn-info flex-grow-1"><i class="fas fa-external-link-alt me-1"></i>
+                                Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="py-5 bg-opacity-50" id="certifications">
+        <div class="container py-5">
+            <h2 class="text-center display-5 fw-bold mb-5" data-aos="fade-up"><span
+                    class="text-gradient">Certifications</span></h2>
+            <div class="row g-4 justify-content-center">
+                <!-- Certification 1 -->
+                <div class="col-lg-4 col-md-6" data-aos="flip-left" data-aos-delay="100">
+                    <div class="custom-card p-4 h-100 d-flex flex-column box-info">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <i class="fas fa-cloud fa-2x text-info"></i>
+                            <span class="badge bg-info bg-opacity-10 text-info border border-info border-opacity-25">Oct
+                                '25</span>
+                        </div>
+                        <h3 class="h5 fw-bold mb-2">Cloud Computing</h3>
+                        <p class="text-muted small mb-3">NPLTEL Online Certification</p>
+                        <div class="mt-auto">
+                            <a href="https://archive.nptel.ac.in/content/noc/NOC25/SEM2/Ecertificates/106/noc25-cs107/Course/NPTEL25CS107S135870051010386462.pdf"
+                                target="_blank" class="btn btn-sm btn-outline-info w-100">Verify Credential <i
+                                    class="fas fa-external-link-alt ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certification 2 -->
+                <div class="col-lg-4 col-md-6" data-aos="flip-left" data-aos-delay="200">
+                    <div class="custom-card p-4 h-100 d-flex flex-column box-warning">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <i class="fas fa-database fa-2x text-warning"></i>
+                            <span
+                                class="badge bg-warning bg-opacity-10 text-warning border border-warning border-opacity-25">Oct
+                                '25</span>
+                        </div>
+                        <h3 class="h5 fw-bold mb-2">SQL (Advanced)</h3>
+                        <p class="text-muted small mb-3">HackerRank</p>
+                        <div class="mt-auto">
+                            <a href="https://www.hackerrank.com/certificates/iframe/531c65d6e727" target="_blank"
+                                class="btn btn-sm btn-outline-warning w-100">Verify Credential <i
+                                    class="fas fa-external-link-alt ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certification 3 -->
+                <div class="col-lg-4 col-md-6" data-aos="flip-left" data-aos-delay="300">
+                    <div class="custom-card p-4 h-100 d-flex flex-column box-primary">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <i class="fas fa-laptop-code fa-2x text-primary"></i>
+                            <span
+                                class="badge bg-primary bg-opacity-10 text-primary border border-primary border-opacity-25">Sep
+                                '23</span>
+                        </div>
+                        <h3 class="h5 fw-bold mb-2">Responsive Web Design</h3>
+                        <p class="text-muted small mb-3">FreeCodeCamp</p>
+                        <div class="mt-auto">
+                            <a href="https://www.freecodecamp.org/certification/Arun0978y6/responsive-web-design"
+                                target="_blank" class="btn btn-sm btn-outline-primary w-100">Verify Credential <i
+                                    class="fas fa-external-link-alt ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certification 4 -->
+                <div class="col-lg-4 col-md-6" data-aos="flip-left" data-aos-delay="400">
+                    <div class="custom-card p-4 h-100 d-flex flex-column box-danger">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <i class="fas fa-robot fa-2x text-danger"></i>
+                            <span
+                                class="badge bg-danger bg-opacity-10 text-danger border border-danger border-opacity-25">Aug'25</span>
+                        </div>
+                        <h3 class="h5 fw-bold mb-2">ChatGPT-4 Prompt Engineering</h3>
+                        <p class="text-muted small mb-3">Infosys Springboard</p>
+                        <div class="mt-auto">
+                            <a href="https://infyspringboard.onwingspan.com/public-assets/infosysheadstart/cert/lex_auth_014157693153288192147/1-99e7375f-24cc-4cb8-9005-6d378e548b8d.pdf"
+                                target="_blank" class="btn btn-sm btn-outline-danger w-100">Verify Credential <i
+                                    class="fas fa-external-link-alt ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certification 5 -->
+                <div class="col-lg-4 col-md-6" data-aos="flip-left" data-aos-delay="500">
+                    <div class="custom-card p-4 h-100 d-flex flex-column box-danger">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <i class="fas fa-brain fa-2x text-danger"></i>
+                            <span
+                                class="badge bg-danger bg-opacity-10 text-danger border border-danger border-opacity-25">Aug
+                                '25</span>
+                        </div>
+                        <h3 class="h5 fw-bold mb-2">Master Generative AI & Tools</h3>
+                        <p class="text-muted small mb-3">Infosys Springboard</p>
+                        <div class="mt-auto">
+                            <a href="https://infyspringboard.onwingspan.com/public-assets/infosysheadstart/cert/lex_auth_014157710267834368237/1-67b71eae-e3a5-482c-b65f-5c5fb0df8bd7.pdf"
+                                target="_blank" class="btn btn-sm btn-outline-danger w-100">Verify Credential <i
+                                    class="fas fa-external-link-alt ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="py-5" id="achievements">
+        <div class="container py-5">
+            <h2 class="text-center display-5 fw-bold mb-5" data-aos="fade-up">
+                <span class="text-gradient">Achievements</span>
+            </h2>
+            <div class="row g-4 justify-content-center">
+                <!-- HackerRank: Problem Solving -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <a href="https://www.hackerrank.com/profile/arunchaudhary901" target="_blank"
+                        class="text-decoration-none">
+                        <div class="custom-card achievement-card p-4 h-100">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <div class="achievement-icon bg-warning bg-opacity-10 text-warning p-3 rounded-circle">
+                                    <i class="fas fa-puzzle-piece fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h4 class="fw-bold mb-0 text-light">Problem Solving</h4>
+                                    <small class="text-muted">HackerRank</small>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center gap-1">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star text-muted opacity-25"></i>
+                                <i class="far fa-star text-muted opacity-25"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- HackerRank: Java -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <a href="https://www.hackerrank.com/profile/arunchaudhary901" target="_blank"
+                        class="text-decoration-none">
+                        <div class="custom-card achievement-card p-4 h-100">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <div class="achievement-icon bg-warning bg-opacity-10 text-warning p-3 rounded-circle">
+                                    <i class="fab fa-java fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h4 class="fw-bold mb-0 text-light">Java</h4>
+                                    <small class="text-muted">HackerRank</small>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center gap-1">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star text-muted opacity-25"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- HackerRank: Python -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <a href="https://www.hackerrank.com/profile/arunchaudhary901" target="_blank"
+                        class="text-decoration-none">
+                        <div class="custom-card achievement-card p-4 h-100">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <div class="achievement-icon bg-warning bg-opacity-10 text-warning p-3 rounded-circle">
+                                    <i class="fab fa-python fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h4 class="fw-bold mb-0 text-light">Python</h4>
+                                    <small class="text-muted">HackerRank</small>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center gap-1">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star text-muted opacity-25"></i>
+                                <i class="far fa-star text-muted opacity-25"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- HackerRank: C++ -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <a href="https://www.hackerrank.com/profile/arunchaudhary901" target="_blank"
+                        class="text-decoration-none">
+                        <div class="custom-card achievement-card p-4 h-100">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <div class="achievement-icon bg-warning bg-opacity-10 text-warning p-3 rounded-circle">
+                                    <i class="devicon-cplusplus-plain fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h4 class="fw-bold mb-0 text-light">C++</h4>
+                                    <small class="text-muted">HackerRank</small>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center gap-1">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star text-muted opacity-25"></i>
+                                <i class="far fa-star text-muted opacity-25"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- LeetCode -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <a href="https://leetcode.com/u/arunchaudhary18/" target="_blank" class="text-decoration-none">
+                        <div class="custom-card achievement-card p-4 h-100">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <div class="achievement-icon bg-warning bg-opacity-10 text-warning p-3 rounded-circle">
+                                    <i class="fas fa-code fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h4 class="fw-bold mb-0 text-light">LeetCode Coder</h4>
+                                    <small class="text-muted">Problem Solving</small>
+                                </div>
+                            </div>
+                            <p class="mb-0 text-muted small">Actively practicing Data Structures & Algorithms on
+                                LeetCode, focusing on arrays, strings, recursion, and problem-solving patterns.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-5 position-relative" id="contact">
+        <div class="container py-5">
+            <h2 class="text-center display-5 fw-bold mb-5" data-aos="fade-up"><span class="text-gradient">Get In
+                    Touch</span></h2>
+            <p class="text-muted mb-5 text-center mx-auto" style="max-width: 600px;">
+                For professional inquiries, collaborations, or opportunities, please contact me through the details
+                provided below.
+            </p>
+            <div class="row g-5">
+                <!-- Contact Info Column -->
+                <div class="col-lg-5" data-aos="fade-right">
+                    <div class="custom-card p-4 h-100">
+                        <h3 class="h4 mb-4 font-mono text-primary">Contact Info</h3>
+                        <p class="text-muted mb-4 lead">
+                            Open to opportunities and collaborations. Feel free to reach out!
+                        </p>
+
+                        <div class="d-flex flex-column gap-4">
+                            <!-- Email -->
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="bg-primary bg-opacity-10 p-3 rounded-circle text-primary">
+                                    <i class="fas fa-envelope fa-lg"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-0 fw-bold">Email</h6>
+                                    <a href="mailto:arunchaudhary9054@gmail.com"
+                                        class="text-muted text-decoration-none">arunchaudhary9054@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <!-- Phone -->
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="bg-primary bg-opacity-10 p-3 rounded-circle text-primary">
+                                    <i class="fas fa-phone fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-0 fw-bold">Phone</h6>
+                                    <a href="tel:+919161945652" class="text-muted text-decoration-none">+91 91619
+                                        45652</a>
+                                </div>
+                            </div>
+
+                            <!-- Location -->
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="bg-primary bg-opacity-10 p-3 rounded-circle text-primary">
+                                    <i class="fas fa-map-marker-alt fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-0 fw-bold">Location</h6>
+                                    <p class="text-muted mb-0">Jalandhar, Punjab</p>
+                                </div>
+                            </div>
+
+                            <!-- LinkedIn -->
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="bg-primary bg-opacity-10 p-3 rounded-circle text-primary">
+                                    <i class="fab fa-linkedin fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-0 fw-bold">LinkedIn</h6>
+                                    <a href="https://www.linkedin.com/in/arunchary45/" target="_blank"
+                                        class="text-muted text-decoration-none">Arun
+                                        Chaudhary</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social Icons -->
+                        <div class="mt-5 pt-3 border-top border-secondary border-opacity-25">
+                            <h6 class="mb-3">Follow Me</h6>
+                            <div class="d-flex gap-3">
+                                <a href="https://github.com/arunchary45" target="_blank"
+                                    class="btn btn-outline-primary rounded-circle social-icon-lg"><i
+                                        class="fab fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/arunchary45/" target="_blank"
+                                    class="btn btn-outline-primary rounded-circle social-icon-lg"><i
+                                        class="fab fa-linkedin"></i></a>
+                                <a href="https://www.instagram.com/arunchry45/" target="_blank"
+                                    class="btn btn-outline-primary rounded-circle social-icon-lg"><i
+                                        class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form Column -->
+                <div class="col-lg-7" data-aos="fade-left">
+                    <div class="custom-card p-4 p-md-5 h-100">
+                        <h3 class="h4 mb-4 font-mono text-primary">Send Message</h3>
+                        <form action="https://formsubmit.co/arunchaudhary9054@gmail.com" method="POST"
+                            id="contact-form">
+                            <!-- FormSubmit Config -->
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_subject" value="New Submission from Portfolio!">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" name="name"
+                                            placeholder="Your Name" required>
+                                        <label for="name" class="text-muted">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" name="email"
+                                            placeholder="name@example.com" required>
+                                        <label for="email" class="text-muted">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Leave a message here" id="message"
+                                            name="message" style="height: 150px" required></textarea>
+                                        <label for="message" class="text-muted">Message</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button type="submit"
+                                        class="btn btn-primary px-5 py-3 rounded-pill font-mono fw-bold w-100">
+                                        Send Message <i class="fas fa-paper-plane ms-2"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 text-center">
+        <div class="container">
+            <div class="mb-2">
+                <a href="https://github.com/arunchary45" target="_blank" class="footer-icon"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/arunchry45/" target="_blank" class="footer-icon"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/arunchary45/" target="_blank" class="footer-icon"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="mailto:arunchaudhary9054@gmail.com" class="footer-icon"><i class="fas fa-envelope"></i></a>
+            </div>
+            <div class="footer-content">
+                <p class="text-muted mb-2">
+                    &copy; <span id="year"></span> <span class="text-gradient fw-bold">Arun Chaudhary</span>. All rights
+                    reserved.
+                </p>
+                <p class="text-muted small mb-1 opacity-65">
+                    Design inspired by <span class="text-white">Arun Chaudhary</span> <i
+                        class="fas fa-heart text-danger ms-1 footer-heart"></i>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
